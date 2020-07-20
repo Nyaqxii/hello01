@@ -1,0 +1,13 @@
+First name: <input (keyup)="inputYourName($event)" (keyup.enter)="saveResult()"/>
+{{firstname}}
+<br/>
+Last name: <input #lastName (keyup)="inputLastName(lastName.value)" (keyup.enter)="saveResult()"/>
+{{lastname}}
+<br/>
+<button (click)="saveResult()" (click)="counter()">SAVE</button>
+<p>count = {{count}} /{{total}} </p>
+<br/>
+Result = {{name}}
+<ul *ngIf="show">
+  <li *ngFor="let color of colors" (click)=toggle()> {{color}}</li>
+</ul>

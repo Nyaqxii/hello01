@@ -8,20 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Your Fristname';
   score = '100';
-  colors = ['Blue', 'Green' ,'Red']; //Array
   show = true;
-  firstname = '';
-  lastname = '';
-  name = '';
-
-  inputYourName(event: any): void {
-    this.firstname=event.target.value;
-  }
-  inputLastName(input: string): void {
-    this.lastname = input;
-  }
-
-  saveResult(): void {
-    this.name= this.firstname + '   ' + this.lastname;
-  }
 }
